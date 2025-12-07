@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Blog Article</title>
+  <meta name="description" content="Clean semantic HTML article with static comments.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">My Simple Blog</h1>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <article class="post">
+      <header class="post-header">
+        <h2 class="post-title">How to Stay Focused While Learning to Code</h2>
+        <p class="post-meta">
+          Posted on <time datetime="2025-12-07">December 7, 2025</time> · by Admin
+        </p>
+      </header>
+
+      <figure class="post-image">
+        <img src="https://img.freepik.com/free-photo/technology-unicorn-venture-workspace-with-pc-used-conduct-code-reviews_482257-118729.jpg?semt=ais_hybrid&w=740&q=80" alt="Coding workspace">
+        <figcaption>Clean workspace for productive coding.</figcaption>
+      </figure>
+
+      <p>
+        Learning to code becomes easier when you break your goals into small,
+        achievable steps and stay consistent.
+      </p>
+
+      <h3>1. Set Clear Goals</h3>
+      <p>
+        Instead of building an entire website at once, focus on completing one
+        section at a time.
+      </p>
+
+      <h3>2. Avoid Distractions</h3>
+      <ul>
+        <li>Turn off notifications</li>
+        <li>Close unused tabs</li>
+        <li>Work in focused time blocks</li>
+      </ul>
+
+      <p>
+        Small daily progress builds strong long-term results.
+      </p>
+    </article>
+
+    <section class="comments" aria-labelledby="comments-title">
+      <h2 id="comments-title">Comments</h2>
+
+      <ul class="comment-list">
+        <li class="comment">
+          <h3 class="comment-author">Alex</h3>
+          <p class="comment-text">Great article! Very useful tips.</p>
+        </li>
+        <li class="comment">
+          <h3 class="comment-author">Maria</h3>
+          <p class="comment-text">I like the idea of working in small steps.</p>
+        </li>
+      </ul>
+
+      <form class="comment-form">
+        <h3>Leave a Comment</h3>
+
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Comment
+          <textarea name="comment" rows="4" required></textarea>
+        </label>
+
+        <button type="submit">Post Comment</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 My Simple Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
